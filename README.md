@@ -22,7 +22,13 @@ Matthewaaron13
 * Pale Carmine: #AF4C2D
 * Misty Rose: #F2E1E1
 #### Others:
-1.
+1. https://coolors.co/495867-577399-bdd5ea-f7f7ff-fe5f55
+* Independence: #495867
+* UCLA Blue: #577399
+* Pale Aqua: #BDD5EA
+* Ghost White: #F7F7FF
+* Sunset Orange: #FE5F55
+
 2.
 3.
 4.
