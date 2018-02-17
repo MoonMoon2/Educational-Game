@@ -22,7 +22,7 @@ function createWindow() {
     mainWindow.loadURL(`file://${__dirname}/html/index.html`);
 
     // Uncomment to open dev tools (Inspect Element) automatically
-    mainWindow.webContents.openDevTools();
+    // mainWindow.webContents.openDevTools();
 
     // Emitted when the window is closed.
     mainWindow.on('closed', function() {
