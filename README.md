@@ -9,6 +9,10 @@ with or have difficulty understanding.
 MoonMoon2
 Matthewaaron13
 
+## Testing Install Command
+```
+git clone https://github.com/MoonMoon2/Educational-Game ~/Desktop/Educational-Game && cd ~/Desktop/Educational-Game && npm install && npm start
+```
 
 
 

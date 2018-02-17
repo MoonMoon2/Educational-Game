@@ -12,20 +12,23 @@ body {
     overflow: auto;
 }
 h1 {
-    font: 26px sans-serif;
+    font: 40px sans-serif;
     font-style: oblique;
 }
 /* Header Bar */
 header {
     padding: 15px 0;
-
 }
 header > * {
     display: inline-block;
 }
-header > div {
+header nav {
     margin: 5px;
-    float: right;
+    margin-right: 30px;
+    float:right;
+}
+header h1 {
+    padding: 12px 30px;
 }
 .navselect {
     cursor: pointer;
@@ -33,8 +36,47 @@ header > div {
     padding: 5px;
     display:inline-block;
 }
-header div div p:hover {
+/* Dropdown Menus in Header Bar */
+.dropbtn {
+    background-color: #3D2732;
+    color: #F2E1E1;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.drop {
+    position: relative;
+    display: inline-block;
+}
+.drop-dropbox {
+    display: none;
+    position: absolute;
+    background-color: #6D2029;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.drop-content {
+    color: #F2E1E1;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.drop:hover .drop-dropbox {
+    display: block;
+}
+.drop:hover .dropbtn {
+    background-color: #6D2029;
+}
+.drop-dropbox p:hover {
     color: #AF4C2D;
+}
+/* Page */
+.page {
+    background-color: #A32C34;
+    width: 100%;
+    height: 775px;
 }
 /*
 input[type="number"],

@@ -13,13 +13,13 @@ let mainWindow;
 function createWindow() {
     // Create the browser window.
     mainWindow = new BrowserWindow({
-        width: 800,
-        height: 1000,
+        width: 1440,
+        height: 900,
         icon: __dirname + '/logo.png'
     });
 
     // and load the index.html of the app.
-    mainWindow.loadURL(`file://${__dirname}/index.html`);
+    mainWindow.loadURL(`file://${__dirname}/html/index.html`);
 
     // Uncomment to open dev tools (Inspect Element) automatically
     mainWindow.webContents.openDevTools();
@@ -53,21 +53,8 @@ app.on('activate', function() {
     if (mainWindow === null) createWindow();
 });
 
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and require them here.
-ipcMain.on('renderData', function(event, arg) {
-    //setting dialog
-    dataWindow = new BrowserWindow({
-        width: 1000,
-        height: 500
-    });
-    // Load options page
-    dataWindow.loadURL(`file://${ __dirname}/data.html`);
-
-    dataWindow.on('closed', function() {
-        // Dereference the window object, usually you would store windows
-        // in an array if your app supports multi windows, this is the time
-        // when you should delete the corresponding element.
-        dataWindow = null;
-    });
+// Setup for other pages
+ipcMain.on('open-page', function(event, arg) {
+    // Load new page
+    mainWindow.loadURL(`file://${ __dirname}/html/`+ arg);
 });
