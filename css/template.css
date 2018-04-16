@@ -43,3 +43,13 @@
 .topics {
     padding: 10px;
 }
+.lt {
+    height:16px;
+}
+.nav2 {
+    border-bottom-color: #6D2029;
+    border-bottom-style: solid;
+    border-top-width: 2px;
+    width: 100.5%;
+    left: -2%;
+}

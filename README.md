@@ -11,7 +11,7 @@ Matthewaaron13
 
 ## Testing Install Command
 ```
-git clone https://github.com/MoonMoon2/Educational-Game ~/Desktop/Educational-Game && cd ~/Desktop/Educational-Game && npm install && npm start
+git clone https://github.com/MoonMoon2/Educational-Game ~/Desktop/Educational-Game && echo "alias edustart='cd ~/Desktop/Educational-Game && npm install && npm start'" >>~/.bash_profile && cd ~/Desktop/Educational-Game && npm install && npm start
 ```
 
 

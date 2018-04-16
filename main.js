@@ -10,6 +10,7 @@ const ipcMain = electron.ipcMain;
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
 
+
 function createWindow() {
     // Create the browser window.
     mainWindow = new BrowserWindow({
@@ -55,6 +56,6 @@ app.on('activate', function() {
 
 // Setup for other pages
 ipcMain.on('open-page', function(event, arg) {
-    // Load new page
+    // Load new page in the same window
     mainWindow.loadURL(`file://${ __dirname}/html/`+ arg);
 });
