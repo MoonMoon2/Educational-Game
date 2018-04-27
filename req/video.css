@@ -1,0 +1,15 @@
+
+
+
+
+/* Play/Pause buttons image manipulation */
+button #play-pause {
+    width: 183px;
+    height: 156px;
+    overflow: hidden;
+}
+#play-pause img {
+  margin: -183px;
+  height: 156px;
+  transition: ease-in-out;
+}
