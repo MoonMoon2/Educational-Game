@@ -89,3 +89,58 @@ header h1 {
     from { opacity: 0; }
       to { opacity: 1; }
 }
+/* Page */
+/* Columns */
+.column {
+    float: left;
+    background-color: #A32C34;
+    border-color: #6D2029;
+    border-style: solid;
+    border-width: 2px;
+    height: 770px;
+}
+.c1 {
+    width: 25%;
+}
+.c2 {
+    border-left-width: 0px;
+    width: 75%;
+}
+/* Personal info */
+.row {
+    padding: 5px 0;
+}
+.row > * {
+    display: inline-block;
+}
+.row {
+    text-align: center;
+    margin: 5px;
+}
+.topicrow {
+    border-top-color: #6D2029;
+    border-top-style: solid;
+    border-top-width: 2px;
+}
+.avatar img {
+    width: 120px;
+    height: 120px;
+}
+/* Topics */
+.topicrow h2 {
+    margin-top: 15px;
+    font-size: 26px;
+}
+.topics {
+    padding: 10px;
+}
+.lt {
+    height:16px;
+}
+.nav2 {
+    border-bottom-color: #6D2029;
+    border-bottom-style: solid;
+    border-top-width: 2px;
+    width: 100.5%;
+    left: -2%;
+}
